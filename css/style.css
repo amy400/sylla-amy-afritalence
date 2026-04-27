@@ -35,3 +35,177 @@ body{
     line-height: 1.6;
     background: linear-gradient(to bottom ,var(--moz-background),var(--couleur3));
 }
+.hero{
+    display: flex;
+    height: 100vh;
+    min-height: 600px;
+    /* remplace image en arriére plan */
+    background:  linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./../image/arriére.png ");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    overflow: hidden;
+   
+
+    }
+    .text-orange{
+    color:var(--couleur-cat-back);
+    font-size: 7rem;
+}
+.gradient-text{
+    display: block;
+   font-family: "Big Shoulders", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+
+}
+.hero-h2{
+    font-family: var(--font-family-h2);
+    font-size: var(--font-size-h2);
+    max-width: 500px;
+    opacity:var(--op);
+}
+/* boutons peronnalisés*/
+.CTA-orange{
+    background-color: var(--couleur-cat-back);
+    padding: var(--cta-padding-start);
+    border-radius: 15px;
+    font-weight:600 ;
+    transition: .3s;
+}
+.CTA-orange:hover{
+    background-color:#f4eeee ;
+    color: var(--couleur-cat);
+}
+.CTA-white{
+    background-color: var(--color);
+    padding: var(--cta-padding-start);
+    border-radius: 15px;
+    font-weight:600 ;
+    transition: .3s;
+    backdrop-filter: blur(5px);/*effet verre 2026*/
+}
+.CTA-white:hover{
+    background-color:var(--couleur) ;
+    color: var(--color);
+}
+/* grid 2026*/
+.carte-section{
+    margin-top: 100px;
+}
+.bento-grid{
+    display: grid;
+    gap:var(--gap);
+    grid-template-columns: repeat(3, 1fr); /*3 colonnes de base*/
+    grid-auto-rows: minmax(160px , auto);
+    max-width: 1110px;
+    margin: 0 auto;
+    }
+    .bento-carte{
+        background:var(--color);
+        border: var(--border);
+        border-radius: 30px;
+        padding: var(--padding) ;
+        position: relative;
+        transition: all .3s cubic-bezier(.4 , 0, .2 , 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .bento-carte:hover{
+        transform: translate Y(-5px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0,0.05);
+
+    }
+    /* logique asymétrique */
+    .card-large{
+        grid-column:span 2;
+        grid-row: span 1;
+        background: #f8fafc;
+        color: var(--couleur-cat);
+
+    }
+    .card-tall{
+        grid-column: span 1;
+        grid-row: span 1;
+        color: var(--couleur-cat);
+    }
+    .card-wide{
+        grid-column: span 1;
+        grid-row: span 1;
+        color: var(--couleur-cat);
+    }
+    .card-small {
+         grid-column:span 2;
+        background: var(--couleur);
+        
+    }
+    .number{
+        position: absolute;
+        top: var(--gap);
+        right: var(--gap);
+        font-size: .8rem ;
+        font-weight: 800;
+        opacity: var(--op);
+    }
+    .icon{
+        font-size: 2.5rem;
+        margin-bottom: var(--magin-bottom);
+    }
+    .card {
+        font-size: var(--gap);
+        margin-bottom: var(--magin-bottom);
+
+    }
+    .card-p{
+        font-size: var(--magin-bottom);
+        line-height: 1.5;
+        opacity: var(--op);
+    }
+   
+
+.police-h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+ font-size:50px;
+}
+.card-visage{
+     display: grid;
+    gap:var(--gap);
+    grid-template-columns: repeat(2, 1fr); /*3 colonnes de base*/
+    grid-auto-rows: minmax(160px , auto);
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.catégories{
+     background:var(--couleur);
+        border: var(--border);
+        border-radius: 30px;
+        padding: var(--padding) ;
+        position: relative;
+        transition: all .3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.catégories:hover{
+     transform: translateY(-10px) scale(1.02);
+     box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+     border-color: var(--couleur-cat);
+}
+.espace img{
+    max-height: 400px;
+    max-width: 800px;
+}
+.espace{
+     border:2px solid #000000;
+     max-height: 800px;
+    max-width: 800px;
+}
+ 
+
