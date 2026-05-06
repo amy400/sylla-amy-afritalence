@@ -38,48 +38,35 @@
     <a href="contact.html" class="nav-link dropdown-toggle">Contact</a>
    </li>
    </ul>
-   <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-
+   
   </div>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button class="CTA-orange" type="button">REJOINDRE</button>
+      <button class="CTA-btn" type="button">REJOINDRE</button>
        </div>
-
      </div>
   </header>  
 <section>
-        <div>
+        <div class="container">
             <!--formulaire de contact-->
             <div class="">
-            <div class="">
-                <h2 class="">Remplir leur coordonnée</h2>
-                  <forme action="">
-                   <div>
-                       <label for="nom">Nom</label>
-                       <input type="text">
-                       <div class=""></div>
-                        </div>
-                    <div>
-                     <label for="prénom">Prénom</label>
-                    <input type="text">
-                    <div class=""></div>
+                <h2 class="police-h2 rem">Remplir leur coordonnée</h2>
+                <div class=" form">
+                  <forme class="row g-3">
+                   <div class="col-md-6">
+                       <label for="nom"  class="form-label">Nom</label>
+                       <input type="text" class="form-control " id="">
+                       </div>
+                       <div class="col-md-6">
+                     <label for="prénom"  class="form-label">Prénom</label>
+                    <input type="text"class="form-control" id="" >
                     </div>
-                   <div>
-                  <label for="email">Email</label>
-                 <input type="email"> 
-                 <div class=""></div>
+                   <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                 <input type="email" class="form-control" id="inputEmail4"> 
                  </div>
-                <div>
-               <label for="email">Email</label>
-                <input type="email">
-                <div class=""></div>
-               </div>
-               <div class="">
-             <label for="sujet"> Sujet</label>
-            <select name="sujet" id="">
+               <div class=" col-md-4">
+             <label for="inputState" class="form-label"> Sujet</label>
+            <select name="sujet" id="inputState" class="form-select">
             <option selected>choisir un sujet</option>
             <option value="web">Développement Web</option>
              <option value="">Design UI/UX</option>
@@ -88,22 +75,29 @@
             <option value=""> Rédaction Tech</option>
              <option value=""> DevOps & Cloud</option>
             </select>
-            <div class=""></div>
             </div>
-            <div class="">
-                <label for="">Message</label>
-                <textarea name="" id="" rows="4" placeholder="votre message (min.20 caractéres)"></textarea>
-                <div class=""></div>
+            <div class="col-12">
+                <label for="message"  class="form-label">Message</label>
+                <textarea name="" id="" rows="4" placeholder="votre message (min.20 caractéres)" class="form-control"></textarea>
             </div>
-        <div>
-            <button type="submit" class="CTA-white">Envoyer</button>
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+            </div>
+           
+        <div class="col-12">
+            <button type="submit" class="btn  CTA-btn1">Envoyer</button>
         
         </form>
+         </div>
+         </div>
          </div>
     <div> merci ! votre message a été envoyé avec succés à l équipe Afritalent.</div>
     <div class="">
         <div class="">
-            <h3 class="">
+            <h3 class=" police-h2 ">
                 Nos bureau
             </h3>
             <p class=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -116,6 +110,8 @@
             <p class="">                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                                       </svg>hello521@Afritalent.com</p>
+        </div>
+        </div>
         </div>
         <!--google maps iframe-->
         <div class="">
