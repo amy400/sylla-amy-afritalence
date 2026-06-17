@@ -4,7 +4,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
  :root{
-     --couleur4:#;
+    
     --couleur3:#880d1e;
     --couleur2:#cbeef3;
     --couleur:#f26a8d;
@@ -34,7 +34,6 @@
 body{
     color: var(--couleur-cat);
     line-height: 1.6;
-   
     font-size: var(--font);
 }
 .hero{
@@ -369,3 +368,13 @@ grid-template-columns: repeat(2, 1fr);
     justify-content: center;
    
 }
+
+/* effet sombre */
+.dark-mode-acceuil{
+    background: linear-gradient(to bottom , var(--moz-background),var(--couleur3));
+    color: var(--color);
+    line-height: 1.6;
+    font-size: var(--font);
+       
+}
+
